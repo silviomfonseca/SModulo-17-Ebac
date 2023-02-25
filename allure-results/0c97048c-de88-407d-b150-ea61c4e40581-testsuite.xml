@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1654210809669' stop='1654210884569'>
+    <name>Access Admin Panel</name>
+    <title>Access Admin Panel</title>
+    <test-cases>
+        <test-case start='1654210809672' status='broken' stop='1654210884555'>
+            <name>Login</name>
+            <title>Login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='samsung galaxy note 20-10.0'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='ea6dd8e7-6913-46ab-a19d-2320a796d9dd-attachment.mp4' type='video/mp4' size='189'/>
+            </attachments>
+            <failure>
+                <message>element ("~Navigate up") still not existing after 30000ms</message>
+                <stack-trace>Error: element ("~Navigate up") still not existing after 30000ms
+                    at C:\Users\Gabriel Roquim QA\OneDrive\EBAC\Módulo 17 - Testes Mobile - Parte 2\MobileShop\A17-Exercicio\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at async Element.wrapCommandFn (C:\Users\Gabriel Roquim QA\OneDrive\EBAC\Módulo 17 - Testes Mobile - Parte 2\MobileShop\A17-Exercicio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Gabriel Roquim QA\OneDrive\EBAC\Módulo 17 - Testes Mobile - Parte 2\MobileShop\A17-Exercicio\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\Gabriel Roquim QA\OneDrive\EBAC\Módulo 17 - Testes Mobile - Parte 2\MobileShop\A17-Exercicio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.wrapCommandFn (C:\Users\Gabriel Roquim QA\OneDrive\EBAC\Módulo 17 - Testes Mobile - Parte 2\MobileShop\A17-Exercicio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Gabriel Roquim QA\OneDrive\EBAC\Módulo 17 - Testes Mobile - Parte 2\MobileShop\A17-Exercicio\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at async Element.wrapCommandFn (C:\Users\Gabriel Roquim QA\OneDrive\EBAC\Módulo 17 - Testes Mobile - Parte 2\MobileShop\A17-Exercicio\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at async adicProdutosScreen.cadastroProduto (C:\Users\Gabriel Roquim QA\OneDrive\EBAC\Módulo 17 - Testes Mobile - Parte 2\MobileShop\A17-Exercicio\test\screens\adicProdutos.screen.js:25:9)
+                    at async Context.&lt;anonymous> (C:\Users\Gabriel Roquim QA\OneDrive\EBAC\Módulo 17 - Testes Mobile - Parte 2\MobileShop\A17-Exercicio\test\specs\cadastroProduto.spec.js:23:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

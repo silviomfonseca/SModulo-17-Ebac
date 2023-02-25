@@ -1,0 +1,28 @@
+pipeline{
+    agent any
+    
+    environment {
+         SECRET_ID = credentials("browserstack-id")
+         SECRET_KEY = credentials("browserstack-key")
+    }
+    
+    stages{
+        stage('Clonar o repositório'){
+            steps{
+                git branch: 'master', url: 'https://github.com/gabrielroquim/A17-Exercicio.git'
+            }
+        }
+        
+        stage('Instalar dependências') {
+            steps {
+               bat 'npm install' 
+            }
+        }
+
+        stage('Iniciar testes') {
+            steps {
+                bat 'npm test'
+            }
+        }
+    }
+}
